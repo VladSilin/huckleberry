@@ -1,12 +1,89 @@
 * {
+  font-family: "Lato", sans-serif;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
+
+  /* Make downstream heights behave predictably */
+  height: 100%;
 }
 
 /* Add styles here! */
+/* General Styles */
+p {
+  line-height: 2rem;
+}
+
+.max-width-wrapper {
+  /* Trick for centering (be sure to set width!) */
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 630px;
+  max-width: 100%;
+}
+
+/* Header Styles */
+header {
+  border-bottom: solid hsl(0deg, 0%, 60%) 8px;
+}
+
+.intro-chunk {
+  padding: 48px 16px;
+
+  width: fit-content;
+  max-width: 360px;
+}
+
+.intro-chunk > .title {
+  line-height: 6rem;
+}
+
+.intro-chunk strong {
+  color: hsl(160deg, 100%, 30%);
+}
+
+/* Main Styles */
+main {
+  padding-top: 48px;
+  padding-bottom: 48px;
+
+  background-color: hsl(0deg, 0%, 40%);
+  height: 100%;
+}
+
+main > section .card {
+  /* Trick for centering (be sure to set width!) */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 16px;
+
+  background-color: hsl(0deg, 0%, 100%);
+  border-bottom: solid hsl(0deg, 0%, 60%) 8px;
+
+  width: 630px;
+  max-width: 100%;
+}
+
+.card > h2 {
+  background-color: hsl(45deg, 100%, 50%);
+  width: fit-content;
+  max-width: 100%;
+  padding: 16px 24px;
+
+  margin: 0px 0px 0px -24px;
+
+  border-bottom: solid hsl(45deg, 100%, 40%) 8px;
+}
