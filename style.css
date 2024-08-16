@@ -23,32 +23,41 @@ body {
 /* Add styles here! */
 /* General Styles */
 p {
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
 
 .max-width-wrapper {
   /* Trick for centering (be sure to set width!) */
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding: 0 24px;
 
-  width: 630px;
-  max-width: 100%;
+  max-width: 800px;
 }
 
 /* Header Styles */
 header {
-  border-bottom: solid hsl(0deg, 0%, 60%) 8px;
+  border-bottom: 8px solid hsl(0deg, 0%, 60%);
 }
 
 .intro-chunk {
-  padding: 48px 16px;
+  padding-top: 96px;
+  padding-bottom: 64px;
 
-  width: fit-content;
-  max-width: 360px;
+  max-width: 415px;
 }
 
-.intro-chunk > .title {
-  line-height: 6rem;
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: 3rem;
 }
 
 .intro-chunk strong {
@@ -57,33 +66,29 @@ header {
 
 /* Main Styles */
 main {
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding: 64px 0;
 
   background-color: hsl(0deg, 0%, 40%);
   height: 100%;
 }
 
 main > section .card {
-  /* Trick for centering (be sure to set width!) */
-  margin-left: auto;
-  margin-right: auto;
-  padding: 8px 16px;
+  margin: 0 -24px;
+  padding: 24px;
 
   background-color: hsl(0deg, 0%, 100%);
   border-bottom: solid hsl(0deg, 0%, 60%) 8px;
-
-  width: 630px;
-  max-width: 100%;
 }
 
-.card > h2 {
+.indented-heading {
   background-color: hsl(45deg, 100%, 50%);
   width: fit-content;
-  max-width: 100%;
   padding: 16px 24px;
 
-  margin: 0px 0px 0px -24px;
+  margin: -16px 0px 1rem -36px;
 
   border-bottom: solid hsl(45deg, 100%, 40%) 8px;
+
+  font-size: 1.5rem;
+  line-height: 1.2;
 }
